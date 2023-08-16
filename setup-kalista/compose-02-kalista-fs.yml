@@ -1,0 +1,30 @@
+version: '3.9'
+
+services:
+  fgtafs:
+    container_name: fgtafs
+    build: builds/fgtafs
+    image: fgtafs
+    hostname: fgtafs
+    ports:
+      - 5984:5984
+    environment:
+      - COUCHDB_USER=kalista
+      - COUCHDB_PASSWORD=kalista23#!
+    networks:
+      - fgtanetwork
+    volumes:
+        - fgtafsdata:/opt/couchdb/data
+        - /var/database/backup:/var/database/backup
+        - /etc/timezone:/etc/timezone:ro
+        - /etc/localtime:/etc/localtime:ro
+
+networks:
+  fgtanetwork:
+    name: fgtanetwork
+    external: true
+
+volumes:
+  fgtafsdata:
+    name: fgtafsdata
+    external: true

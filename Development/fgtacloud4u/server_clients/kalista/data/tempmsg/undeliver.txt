@@ -1,0 +1,28 @@
+
+633bd7184ee1e|3|1|SL05.039.22.10010026|Yaksa|yks_yaksaagung@gmail.com
+633bd7184ee1e|3|2|SL05.056.22.10010038|Yeni|yeni_9@gmail.com
+633bd7184ee1e|3|3|SL05.051.22.10020028|Lestari Wulandari|lestari_setiawan85@yahoo.com
+
+633bd71cca920|3|1|SL05.039.22.10010026|Yaksa|yks_yaksaagung@gmail.com
+633bd71cca920|3|2|SL05.056.22.10010038|Yeni|yeni_9@gmail.com
+633bd71cca920|3|3|SL05.051.22.10020028|Lestari Wulandari|lestari_setiawan85@yahoo.com
+
+633bd7218eec4|3|1|SL05.039.22.10010026|Yaksa|yks_yaksaagung@gmail.com
+633bd7218eec4|3|2|SL05.056.22.10010038|Yeni|yeni_9@gmail.com
+633bd7218eec4|3|3|SL05.051.22.10020028|Lestari Wulandari|lestari_setiawan85@yahoo.com
+
+633bd7230d1d5|3|1|SL05.039.22.10010026|Yaksa|yks_yaksaagung@gmail.com
+633bd7230d1d5|3|2|SL05.056.22.10010038|Yeni|yeni_9@gmail.com
+633bd7230d1d5|3|3|SL05.051.22.10020028|Lestari Wulandari|lestari_setiawan85@yahoo.com
+
+633bd72421b7d|3|1|SL05.039.22.10010026|Yaksa|yks_yaksaagung@gmail.com
+633bd72421b7d|3|2|SL05.056.22.10010038|Yeni|yeni_9@gmail.com
+633bd72421b7d|3|3|SL05.051.22.10020028|Lestari Wulandari|lestari_setiawan85@yahoo.com
+
+633bd7255cd95|3|1|SL05.039.22.10010026|Yaksa|yks_yaksaagung@gmail.com
+633bd7255cd95|3|2|SL05.056.22.10010038|Yeni|yeni_9@gmail.com
+633bd7255cd95|3|3|SL05.051.22.10020028|Lestari Wulandari|lestari_setiawan85@yahoo.com
+
+633bd72671cab|3|1|SL05.039.22.10010026|Yaksa|yks_yaksaagung@gmail.com
+633bd72671cab|3|2|SL05.056.22.10010038|Yeni|yeni_9@gmail.com
+633bd72671cab|3|3|SL05.051.22.10020028|Lestari Wulandari|lestari_setiawan85@yahoo.com

@@ -1,0 +1,9 @@
+{
+	"title" : "Client Config",
+	"allowanonymous" : false,
+	"allowedgroups" : ["public"],
+	"apis" : {
+		"list" : { "allowanonymous": false, "allowedgroups" : ["public"] }
+	}	
+}
+

@@ -1,0 +1,375 @@
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900012601.jpg
+    [size] => 21911
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900012601
+)
+
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900022212.jpg
+    [size] => 21952
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900022212
+)
+
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900032104.jpg
+    [size] => 21948
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900032104
+)
+
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900043835.jpg
+    [size] => 21916
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900043835
+)
+
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900052715.jpg
+    [size] => 21987
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900052715
+)
+
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900062312.jpg
+    [size] => 21976
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900062312
+)
+
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900072011.jpg
+    [size] => 21952
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900072011
+)
+
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900081505.jpg
+    [size] => 21939
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900081505
+)
+
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900091406.jpg
+    [size] => 21974
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900091406
+)
+
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900101406.jpg
+    [size] => 21930
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900101406
+)
+
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900111505.jpg
+    [size] => 21946
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900111505
+)
+
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900123215.jpg
+    [size] => 21939
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900123215
+)
+
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900131211.jpg
+    [size] => 21899
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900131211
+)
+
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900143304.jpg
+    [size] => 21933
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900143304
+)
+
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900152911.jpg
+    [size] => 21971
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900152911
+)
+
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900161003.jpg
+    [size] => 21949
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900161003
+)
+
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900172602.jpg
+    [size] => 21961
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900172602
+)
+
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900183305.jpg
+    [size] => 21928
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900183305
+)
+
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900193836.jpg
+    [size] => 21835
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900193836
+)
+
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900201211.jpg
+    [size] => 21945
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900201211
+)
+
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900211802.jpg
+    [size] => 21984
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900211802
+)
+
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900223130.jpg
+    [size] => 21945
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900223130
+)
+
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900233018.jpg
+    [size] => 21949
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900233018
+)
+
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900242312.jpg
+    [size] => 21987
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900242312
+)
+
+
+--------------------------------
+/var/www/fgtacloud4u/server_apps/crm/voucher/voubatch/apis/xtion-generate.php line 493
+--------------------------------
+Array
+(
+    [name] => 2301900253216.jpg
+    [size] => 21961
+    [type] => image/jpeg
+    [width] => 375
+    [height] => 375
+    [doctype] => mst_vou
+    [docid] => 2301900253216
+)
+

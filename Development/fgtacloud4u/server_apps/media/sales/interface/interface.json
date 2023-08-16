@@ -1,0 +1,8 @@
+{
+	"title" : "Interface",
+	"apis" : {
+		"zupl-mo-01" : {"allowanonymous": true},
+		"zupl-as-01" : {"allowanonymous": true}
+	}	
+}
+

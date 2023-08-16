@@ -1,0 +1,9 @@
+{
+	"title" : "Listener",
+	"allowanonymous" : true,
+	"allowedgroups" : ["public"],
+	"apis" : {
+		"recv" : { "allowanonymous": true }
+	}	
+}
+

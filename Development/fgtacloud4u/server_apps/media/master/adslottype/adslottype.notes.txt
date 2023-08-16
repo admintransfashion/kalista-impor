@@ -1,0 +1,7 @@
+adslottype
+
+original path : /apps/media/master/adslottype
+created by    : Agung Nugroho
+                agung_dhewe@yahoo.com
+created date  : 2019-12-11
+================================================

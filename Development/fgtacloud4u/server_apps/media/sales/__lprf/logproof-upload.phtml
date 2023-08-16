@@ -1,0 +1,51 @@
+<div id="pnl_upload">
+	<div class="fgta-page-title">Upload</div>
+	
+
+	<div style="display: flex">
+		<div >
+			<div id="pnl_upload-obj_pastebox" class="pastebox" contenteditable placeholder="Paste data disini..." oninput="if(this.innerHTML.trim()==='<br>')this.innerHTML=''" ></div>
+		</div>
+	</div>
+
+	<div style="margin-top: 10px">
+		<table id="pnl_upload-tbl_list" paging="true" cellspacing="0" width="100%">
+			<thead>
+				<tr>
+					<th mapping="No">No</th>
+					<th mapping="Agency">Agency</th>
+					<th mapping="Advertiser">Advertiser</th>
+					<th mapping="Brand">Brand</th>
+					<th mapping="OrderId">OrderId</th>
+					<th mapping="OrderName">OrderName</th>
+					<th mapping="EndDate">EndDate</th>
+					<th mapping="Aired">Aired</th>
+					<th mapping="NettInvoice" style="text-align: right">NettInvoice</th>
+					<th mapping="TypePayment">TypePayment</th>
+				</tr>
+				<tr style="background-color: #cccccc; height: 30px">
+					<td class="fgtable-head" style="width: 100px; border-bottom: 1px solid #000000">No</td>
+					<td class="fgtable-head" style="width: 100px; border-bottom: 1px solid #000000">Agency</td>
+					<td class="fgtable-head" style="width: 100px; border-bottom: 1px solid #000000">Advertiser</td>
+					<td class="fgtable-head" style="width: 100px; border-bottom: 1px solid #000000">Brand</td>
+					<td class="fgtable-head" style="width: 100px; border-bottom: 1px solid #000000">OrderId</td>
+					<td class="fgtable-head" style="width: 100px; border-bottom: 1px solid #000000">OrderName</td>
+					<td class="fgtable-head" style="width: 100px; border-bottom: 1px solid #000000">EndDate</td>
+					<td class="fgtable-head" style="width: 100px; border-bottom: 1px solid #000000">Aired</td>
+					<td class="fgtable-head" style="width: 100px; border-bottom: 1px solid #000000; text-align: right">NettInvoice</td>
+					<td class="fgtable-head" style="width: 100px; border-bottom: 1px solid #000000">TypePayment</td>
+				</tr>
+			</thead>
+
+			<tfoot>
+				<td style="background-color: #ccc; font-weight: bold;" colspan="8">TOTAL</td>
+				<td style="background-color: #ccc; font-weight: bold; text-align: right" id="totalNettInvoice">&nbsp</td>
+				<td style="background-color: #ccc; font-weight: bold;" >&nbsp</td>
+			</tfoot>
+		</table>
+	</div>
+
+
+	<a id="pnl_upload-btn_upload" href="javascript:void(0)" class="easyui-linkbutton">Upload</a>
+
+</div>

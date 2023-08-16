@@ -1,0 +1,19 @@
+/* CSS For printing purpose*/
+
+.rptdata-col-no {
+	width: 10mm
+}
+
+.rptdata-col-descr {
+	font-style: italic;
+}
+
+.rptdata-col-price {
+	font-style: italic;
+	text-align: right;
+}
+
+.rowfoot {
+	font-weight: bold;
+}				
+		

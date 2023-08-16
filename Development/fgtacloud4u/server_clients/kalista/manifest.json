@@ -1,0 +1,32 @@
+{
+	"name": "Kalista - Trans Fashion Indonesia",
+	"short_name": "Kalista",
+	"lang": "en-US",
+	"start_url": "/",
+	"display": "standalone",
+	"theme_color": "#9c6ea7",
+	"icons": [
+		{
+            "src": "index.php/public/assets/icon-kalista-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "index.php/public/assets/icon-kalista-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "index.php/public/assets/icon-kalista-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "index.php/public/assets/icon-kalista-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+
+
+	]
+}

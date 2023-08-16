@@ -1,0 +1,165 @@
+<?php namespace FGTA4\apis;
+
+if (!defined('FGTA4')) {
+	die('Forbiden');
+}
+
+require_once __ROOT_DIR.'/core/sqlutil.php';
+require_once __ROOT_DIR.'/core/debug.php';
+require_once __ROOT_DIR.'/core/currency.php';
+
+require_once __DIR__.'/xtion.base.php';
+
+
+use \FGTA4\exceptions\WebException;
+use \FGTA4\utils\Currency;
+use \FGTA4\debug;
+
+
+$API = new class extends XtionBase {
+	function __construct() {
+		$logfilepath = __LOCALDB_DIR . "/output/mediaorder-commit.txt";
+		// debug::disable();
+		debug::start($logfilepath, "w");
+
+		$this->debugoutput = true;
+		$DB_CONFIG = DB_CONFIG[$GLOBALS['MAINDB']];
+		$DB_CONFIG['param'] = DB_CONFIG_PARAM[$GLOBALS['MAINDBTYPE']];
+		$this->db = new \PDO(
+					$DB_CONFIG['DSN'], 
+					$DB_CONFIG['user'], 
+					$DB_CONFIG['pass'], 
+					$DB_CONFIG['param']
+		);	
+
+	}
+
+	public function execute($id) {
+		$userdata = $this->auth->session_get_user();
+	
+		try {
+			
+			$data = (object)[
+				'header' => $this->get_header_row($id),
+				'detil'  => $this->get_detil_rows($id),
+				'currentuser' => $userdata
+			];
+
+			$salesorder = (object)[
+				'item' => $this->create_salesorder_item($data),
+				'currentuser' => $userdata
+			];
+
+
+			$this->db->setAttribute(\PDO::ATTR_AUTOCOMMIT,0);
+			$this->db->beginTransaction();
+			
+			try {
+
+				$this->pre_action_check($data);
+				$this->save_and_set_flag($data);
+				$this->commit_salesorder($data, $salesorder);
+
+				$this->db->commit();
+				return true;
+			} catch (\Exception $ex) {
+				$this->db->rollBack();
+				throw $ex;
+			} finally {
+				$this->db->setAttribute(\PDO::ATTR_AUTOCOMMIT,1);
+			}
+		} catch (\Exception $ex) {
+			throw $ex;
+		}
+	}
+
+
+	function pre_action_check($data) {
+		try {
+		} catch (\Exception $ex) {
+			throw $ex;
+		}
+	}
+
+
+	public function create_salesorder_item($data) {
+		$records = [];
+
+		// DEBET
+		foreach ($data->detil as $detil) {
+			$records[] = (object)[
+				'salesorderitem_id' => uniqid() ,
+				'salesorderitem_descr' => $detil->mediaorderitem_descr,
+				'itemclass_id' => $detil->itemclass_id,
+				'salesorderitem_price' => $detil->mediaorderitem_price,
+				'salesorderitem_qty' => 1,
+				'salesorderitem_pricesubtotal' => $detil->mediaorderitem_price,
+				'salesorder_id' => $detil->mediaorder_id,
+				'_createby' => $data->currentuser->username,
+				'_createdate' => date("Y-m-d H:i:s")				
+			];
+		}
+
+		return $records;
+	}
+
+
+	public function commit_salesorder($data, $salesorder) {
+		try {
+			foreach ($salesorder->item as $item) {
+				debug::log($item);
+
+				$cmd = \FGTA4\utils\SqlUtility::CreateSQLInsert('trn_salesorderitem', $item);
+				$stmt = $this->db->prepare($cmd->sql);	
+				$stmt->execute($cmd->params);	
+			}
+
+			$sql = " 
+				update trn_salesorder
+				set 
+				salesorder_iscommit = 1,
+				salesorder_commitby = :username,
+				salesorder_commitdate = :date
+				where
+				salesorder_id = :id
+			";
+
+			$stmt = $this->db->prepare($sql);
+			$stmt->execute([
+				":id" => $data->header->mediaorder_id,
+				":username" => $data->currentuser->username,
+				":date" => date("Y-m-d H:i:s")
+			]);		
+
+		} catch (\Exception $ex) {
+			throw $ex;
+		}
+	}
+
+
+	public function save_and_set_flag($data) {
+		try {
+			$sql = " 
+				update trn_mediaorder
+				set 
+				mediaorder_iscommit = 1,
+				mediaorder_commitby = :username,
+				mediaorder_commitdate = :date
+				where
+				mediaorder_id = :id
+			";
+
+			$stmt = $this->db->prepare($sql);
+			$stmt->execute([
+				":id" => $data->header->mediaorder_id,
+				":username" => $data->currentuser->username,
+				":date" => date("Y-m-d H:i:s")
+			]);
+
+		} catch (\Exception $ex) {
+			throw $ex;
+		}	
+	}
+
+
+};

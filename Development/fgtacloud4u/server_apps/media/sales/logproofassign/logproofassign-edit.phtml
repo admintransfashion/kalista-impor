@@ -1,0 +1,229 @@
+<div id="pnl_edit">
+	<div class="fgta-page-title" style="display: flex; align-items: center ">
+		<div>Edit Log Proof</div>
+		<a id="pnl_edit-btn_edit" href="javascript:void(0)" class="easyui-linkbutton" style="margin-left:10px;" data-options="plain:true,iconCls:'fgta-icon-edit'">edit</a>
+	</div>
+
+
+	<form id="pnl_edit-form">
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">ID</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_medialogproofitem_id" class="easyui-textbox" mapping="medialogproofitem_id" uppercase="true" maxlength="14" style="width: 400px" data-options="multiline: false , required: true, invalidMessage: 'ID harus diisi' ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Slot Mulai</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_mediaadslot_timestart" class="easyui-textbox" mapping="mediaadslot_timestart" uppercase="true" maxlength="8" style="width: 400px" data-options="multiline: false , required: true, invalidMessage: 'Waktu Mulai harus diisi' ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Selesai</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_mediaadslot_timeend" class="easyui-textbox" mapping="mediaadslot_timeend" uppercase="true" maxlength="8" style="width: 400px" data-options="multiline: false , required: true, invalidMessage: 'Waktu Selesai harus diisi' ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Descr</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_mediaadslot_descr" class="easyui-textbox" mapping="mediaadslot_descr"  maxlength="90" style="width: 400px" data-options="multiline: false , disbled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Actual Mulai</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_actual_timestart" class="easyui-textbox" mapping="actual_timestart" uppercase="true" maxlength="8" style="width: 400px" data-options="multiline: false , required: true, invalidMessage: 'Waktu Actual Mulai harus diisi', disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Selesai</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_actual_timeend" class="easyui-textbox" mapping="actual_timeend" uppercase="true" maxlength="8" style="width: 400px" data-options="multiline: false , required: true, invalidMessage: 'Waktu Actual Selesai harus diisi', disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Durasi</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_actual_duration" class="easyui-numberbox" mapping="actual_duration" style="width: 400px; text-align:right" data-options="precision: 2, decimalSeparator:'.', groupSeparator:','  , required: true, invalidMessage: 'Durasi', disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">SpotId</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_spot_id" class="easyui-textbox" mapping="spot_id"  maxlength="30" style="width: 400px" data-options="multiline: false , required: true, invalidMessage: 'Spot id harus diisi', disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Value IDR</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_mediaorderitem_validr" class="easyui-numberbox" mapping="mediaorderitem_validr" style="width: 400px; text-align:right" data-options="precision: 2, decimalSeparator:'.', groupSeparator:','  , required: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">PPN</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_mediaorderitem_ppnidr" class="easyui-numberbox" mapping="mediaorderitem_ppnidr" style="width: 400px; text-align:right" data-options="precision: 2, decimalSeparator:'.', groupSeparator:','  , required: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">PPh</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_pph_taxtype_id" class="easyui-combo" style="width: 400px" mapping="pph_taxtype_id" display="pph_taxtype_name" data-options="editable:false, valueField:'id', textField:'text' , prompt: 'NONE'"  >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Media Order</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_mediaorder_id" class="easyui-combo" style="width: 400px" mapping="mediaorder_id" display="mediaorder_descr" data-options="editable:false, valueField:'id', textField:'text' , prompt: 'NONE', disabled: true"  >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Media Order Item</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_mediaorderitem_id" class="easyui-combo" style="width: 400px" mapping="mediaorderitem_id" display="mediaorderitem_descr" data-options="editable:false, valueField:'id', textField:'text' , prompt: 'NONE', disabled: true"  >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Budget</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_projbudget_id" class="easyui-combo" style="width: 400px" mapping="projbudget_id" display="projbudget_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'Budget harus diisi', prompt: '-- PILIH --'"   validType="requiredcombo['pnl_edit-cbo_projbudget_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Budget Task</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_projbudgettask_id" class="easyui-combo" style="width: 400px" mapping="projbudgettask_id" display="projbudgettask_name" data-options="editable:false, valueField:'id', textField:'text' , prompt: 'NONE'"  >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Process Bill</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_billoutpreprocess_id" class="easyui-combo" style="width: 400px" mapping="billoutpreprocess_id" display="billoutpreprocess_name" data-options="editable:false, valueField:'id', textField:'text' , prompt: 'NONE', disabled: true"  >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">MediaOrderType Id</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_mediaordertype_id" class="easyui-textbox" mapping="mediaordertype_id"  maxlength="10" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Partner Info</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_logproof_partnerinfo" class="easyui-textbox" mapping="logproof_partnerinfo"  maxlength="255" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Agency Partner Id</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_agency_partner_id" class="easyui-textbox" mapping="agency_partner_id"  maxlength="14" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Advertiser Partner Id</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_advertiser_partner_id" class="easyui-textbox" mapping="advertiser_partner_id"  maxlength="14" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Brand Id</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_brand_id" class="easyui-textbox" mapping="brand_id"  maxlength="14" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Project Id</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_project_id" class="easyui-textbox" mapping="project_id"  maxlength="14" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">ProjectTask Id</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_projecttask_id" class="easyui-textbox" mapping="projecttask_id"  maxlength="14" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">ID</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_medialogproof_id" class="easyui-textbox" mapping="medialogproof_id"  maxlength="14" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+	</form>
+
+
+	<div class="form_row" style="margin-top: 30px">
+		<div class="form_label_col"></div>
+		<div class="form_input_col" style="border: 0px solid black">
+			<a id="pnl_edit-btn_save" class="easyui-linkbutton c1" style="width">Simpan</a>
+		</div>
+	</div>	
+
+
+
+
+
+	<div style="margin-top: 30px; margin-left:-5px; margin-right: -5px; background-color: #cccccc; display: flex; justify-content: space-between; padding: 10px 2px 2px 2px ">
+		<div>
+			<!-- letakkan tombol yang lin disini -->
+		
+		
+		
+		</div>
+		<div>
+			<a id="pnl_edit-btn_delete" class="easyui-linkbutton c5" style="margin-bottom: 10px; margin-right: 10px">Hapus</a>
+		</div>
+	</div>
+
+</div>
+

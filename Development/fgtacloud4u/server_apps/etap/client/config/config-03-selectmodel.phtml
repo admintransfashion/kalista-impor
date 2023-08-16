@@ -1,0 +1,76 @@
+<div id="pnl_selectmodel"  style="display:none">
+	<div class="fgta-page-title">Pilih Model Design Skema</div>
+
+	<div class="namatoko">Nama Toko</div>
+
+	<form id="pnl_selectmodel-form">
+
+		<div class="form_row">
+			<div class="form_label_col" style="border: 0px solid black; vertical-align: top; font-weight:bold"><input id="pnl_selectmodel-schema1" name="pnl_selectmodel-schema" schemaname="schema1" value="schema1" type="radio" style="cursor: pointer"></div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<div style="display: flex">
+					<div style="width: 140px; margin-right: 10px">
+						<img name="pnl_selectmodel-schema" schemaname="schema1" src="index.php/asset/etap/client/config/icons/schema1.svg" width="140" height="140" style="cursor: pointer">
+					</div>
+					<div>
+						<div name="pnl_selectmodel-schema" schemaname="schema1" style="font-weight: bold; margin-bottom: 10px; text-decoration: underline; cursor: pointer">Schema 1</div>
+						<div>
+						Semua data transaksi disimpan dalam satu table (denormalisai)
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+
+		<div class="form_row">
+			<div class="form_label_col" style="border: 0px solid black; vertical-align: top; font-weight:bold"><input id="pnl_selectmodel-schema2" name="pnl_selectmodel-schema" schemaname="schema2" value="schema2" type="radio" style="cursor: pointer"></div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<div style="display: flex">
+					<div style="width: 140px; margin-right: 10px">
+						<img name="pnl_selectmodel-schema" schemaname="schema2" src="index.php/asset/etap/client/config/icons/schema2.svg" width="140" height="140" style="cursor: pointer">
+					</div>
+					<div>
+						<div name="pnl_selectmodel-schema" schemaname="schema2" style="font-weight: bold; margin-bottom: 10px; text-decoration: underline; cursor: pointer">Schema 2</div>
+						<div>
+						Pemisahan antara tabel untuk menyimpan data header transaksi dan detil item yang terjual
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+
+		<div class="form_row">
+			<div class="form_label_col" style="border: 0px solid black; vertical-align: top; font-weight:bold"><input id="pnl_selectmodel-schema3" name="pnl_selectmodel-schema" schemaname="schema3" value="schema3" type="radio" style="cursor: pointer"></div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<div style="display: flex">
+					<div style="width: 140px; margin-right: 10px">
+						<img name="pnl_selectmodel-schema" schemaname="schema3" src="index.php/asset/etap/client/config/icons/schema3.svg" width="140" height="140" style="cursor: pointer">
+					</div>
+					<div>
+						<div name="pnl_selectmodel-schema" schemaname="schema3" style="font-weight: bold; margin-bottom: 10px; text-decoration: underline; cursor: pointer">Schema 3</div>
+						<div>
+						Pemisahan antara tabel untuk menyimpan data header transaksi dan detil item yang terjual,
+						dengan informasi tambahan, yaitu table pembayaran untuk mendukung beberapa tipe pembayaran
+						yang dapat dilakukan di satu transaksi.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+
+	</form>
+
+
+	<div class="form_row" style="margin-top: 30px">
+		<div class="form_label_col"></div>
+		<div class="form_input_col" style="border: 0px solid black">
+			<a id="pnl_selectmodel-btn_next" class="easyui-linkbutton c8" style="width">Selanjutnya</a>
+		</div>
+	</div>	
+
+
+	<div class="form_row" style="margin-top: 50px">
+	</div>
+
+
+</div>

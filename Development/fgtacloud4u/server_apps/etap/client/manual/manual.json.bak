@@ -1,0 +1,10 @@
+{
+	"title" : "Documentation",
+	"icon" : "icon-manual-white.png",
+	"allowanonymous" : true,
+	"allowedgroups" : ["public"],
+	"apis" : {
+		"list" : { "allowanonymous": false, "allowedgroups" : ["public"] }
+	}	
+}
+

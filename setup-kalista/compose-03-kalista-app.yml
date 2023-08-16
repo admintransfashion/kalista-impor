@@ -1,0 +1,31 @@
+version: '3.9'
+
+services:
+  fgta4server:
+    container_name: fgta4server
+    build: builds/fgta4server
+    image: fgta4server
+    hostname: fgta4server
+    ports:
+      - 8081:80
+    networks:
+      - fgtanetwork
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      - APACHE_DOCUMENT_ROOT:/var/www/html/fgta4
+    volumes:
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+      - /home/kalista/crons/config:/home/kalista/crons/config
+      - /var/www/fgtacloud4u:/var/www/fgtacloud4u
+      - /var/www/fgtacloud4u/server_clients:/var/www/html/fgta4
+      - /var/www/logs:/var/www/logs
+      - /var/www/html/others:/var/www/html/others
+      - /Volumes/ramdisk:/mnt/ramdisk
+    working_dir: /var/www/html/fgta4
+
+networks:
+  fgtanetwork:
+    name: fgtanetwork
+    external: true

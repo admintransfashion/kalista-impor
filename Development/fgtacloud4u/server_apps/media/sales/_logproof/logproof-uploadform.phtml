@@ -1,0 +1,294 @@
+<div id="pnl_edituploadform">
+	<div class="fgta-page-title" style="display: flex; align-items: center ">
+		<div>Edit Upload</div>
+		<a id="pnl_edituploadform-btn_edit" href="javascript:void(0)" class="easyui-linkbutton" style="margin-left:10px;" data-options="plain:true,iconCls:'fgta-icon-edit'">edit</a>
+	</div>
+	<div id="pnl_edituploadform-title" style="margin-top: 0px; margin-bottom: 30px; font-weight: bold; font-size: 1.2em">XXXXXXX</div>
+
+
+	<form id="pnl_edituploadform-form">
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">ID</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_medialogproofupload_id" class="easyui-textbox" mapping="medialogproofupload_id"  maxlength="14"  style="width: 400px" data-options="multiline:false , required: true, invalidMessage: 'ID harus diisi' ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">SlotTimeStart</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_mediaadslot_timestart" class="easyui-textbox" mapping="mediaadslot_timestart"  maxlength="90"  style="width: 400px" data-options="multiline:false , required: true, invalidMessage: 'Waktu Mulai harus diisi' ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">SlotTimeEnd</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_mediaadslot_timeend" class="easyui-textbox" mapping="mediaadslot_timeend"  maxlength="90"  style="width: 400px" data-options="multiline:false , required: true, invalidMessage: 'Waktu Selesai harus diisi' ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">SlotDuration</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_mediaadslot_duration" class="easyui-numberbox" mapping="mediaadslot_duration" style="width: 400px; text-align:right" data-options="precision: 2, decimalSeparator:'.', groupSeparator:','  , required: true, invalidMessage: 'Durasi harus diisi'">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">SlotDescr</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_mediaadslot_descr" class="easyui-textbox" mapping="mediaadslot_descr"  maxlength="255"  style="width: 400px" data-options="multiline:false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">SlotCode</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_mediaadslot_code" class="easyui-textbox" mapping="mediaadslot_code"  maxlength="255"  style="width: 400px" data-options="multiline:false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">ActualTimeStart</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_actual_timestart" class="easyui-textbox" mapping="actual_timestart"  maxlength="90"  style="width: 400px" data-options="multiline:false , required: true, invalidMessage: 'Waktu Actual Mulai harus diisi' ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">ActualTimeEnd</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_actual_timeend" class="easyui-textbox" mapping="actual_timeend"  maxlength="90"  style="width: 400px" data-options="multiline:false , required: true, invalidMessage: 'Waktu Actual Selesai harus diisi' ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">ActualDuration</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_actual_duration" class="easyui-numberbox" mapping="actual_duration" style="width: 400px; text-align:right" data-options="precision: 2, decimalSeparator:'.', groupSeparator:','  , required: true, invalidMessage: 'Durasi harus diisi'">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">SpotId</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_spot_id" class="easyui-numberbox" mapping="spot_id" style="width: 400px; text-align:right" data-options="precision: 2, decimalSeparator:'.', groupSeparator:','  , required: true, invalidMessage: 'Spot id harus diisi'">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">MeidaOrderRef</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_mediaorder_ref" class="easyui-textbox" mapping="mediaorder_ref"  maxlength="30"  style="width: 400px" data-options="multiline:false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">TypeMediaOrder</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_mediaorder_reftype" class="easyui-textbox" mapping="mediaorder_reftype"  maxlength="30"  style="width: 400px" data-options="multiline:false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">MediaOrderDescr</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_mediaorder_descr" class="easyui-textbox" mapping="mediaorder_descr"  maxlength="255"  style="width: 400px" data-options="multiline:false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">MediaOrderId</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_mediaorder_id" class="easyui-textbox" mapping="mediaorder_id"  maxlength="30"  style="width: 400px" data-options="multiline:false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">AgencyCode</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_agency_code" class="easyui-textbox" mapping="agency_code"  maxlength="30"  style="width: 400px" data-options="multiline:false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">AgencyName</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_agency_name" class="easyui-textbox" mapping="agency_name"  maxlength="90"  style="width: 400px" data-options="multiline:false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Agency Partner Id</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_agency_partner_id" class="easyui-textbox" mapping="agency_partner_id"  maxlength="14"  style="width: 400px" data-options="multiline:false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">AdvertiserCode</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_advertiser_code" class="easyui-textbox" mapping="advertiser_code"  maxlength="30"  style="width: 400px" data-options="multiline:false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">AdvertiserName</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_advertiser_name" class="easyui-textbox" mapping="advertiser_name"  maxlength="90"  style="width: 400px" data-options="multiline:false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Advertiser Partner Id</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_advertiser_partner_id" class="easyui-textbox" mapping="advertiser_partner_id"  maxlength="14"  style="width: 400px" data-options="multiline:false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">BrandCode</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_brand_code" class="easyui-textbox" mapping="brand_code"  maxlength="30"  style="width: 400px" data-options="multiline:false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">BrandName</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_brand_name" class="easyui-textbox" mapping="brand_name"  maxlength="90"  style="width: 400px" data-options="multiline:false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Brand Id</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_brand_id" class="easyui-textbox" mapping="brand_id"  maxlength="14"  style="width: 400px" data-options="multiline:false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">ProgrammeCode</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_programme_code" class="easyui-textbox" mapping="programme_code"  maxlength="30"  style="width: 400px" data-options="multiline:false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">ProgrammeName</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_programme_name" class="easyui-textbox" mapping="programme_name"  maxlength="90"  style="width: 400px" data-options="multiline:false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Project Id</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_project_id" class="easyui-textbox" mapping="project_id"  maxlength="14"  style="width: 400px" data-options="multiline:false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">EpisodeCode</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_episode_code" class="easyui-textbox" mapping="episode_code"  maxlength="30"  style="width: 400px" data-options="multiline:false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">EpisodeName</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_episode_name" class="easyui-textbox" mapping="episode_name"  maxlength="90"  style="width: 400px" data-options="multiline:false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Project Id</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_projecttask_id" class="easyui-textbox" mapping="projecttask_id"  maxlength="14"  style="width: 400px" data-options="multiline:false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Total IDR</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_medialogproof_validr" class="easyui-numberbox" mapping="medialogproof_validr" style="width: 400px; text-align:right" data-options="precision: 2, decimalSeparator:'.', groupSeparator:','  , required: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">ID</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edituploadform-txt_medialogproof_id" class="easyui-textbox" mapping="medialogproof_id"  maxlength="14"  style="width: 400px" data-options="multiline:false  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+	</form>
+
+
+	<div class="form_row" style="margin-top: 30px">
+		<div class="form_label_col"></div>
+		<div class="form_input_col" style="border: 0px solid black">
+			<div style="margin-bottom: 10px">
+				<input id="pnl_edituploadform-autoadd" type="checkbox"><label for="pnl_edituploadform-autoadd">Otomatis tambah baru setelah berhasil disimpan</label>
+			</div>
+			<div>
+				<a id="pnl_edituploadform-btn_save" class="easyui-linkbutton c1" style="width: 100px">Simpan</a>
+			</div>
+		</div>
+	</div>	
+
+
+
+	<div style="margin-top: 30px; margin-left:-5px; margin-right: -5px; background-color: #cccccc; height: 40px; display: flex; justify-content: space-between; padding: 5px 2px 2px 2px ">
+		<div>
+			<a id="pnl_edituploadform-btn_prev" class="easyui-linkbutton c8" style="width: 50px">Prev</a>
+			<a id="pnl_edituploadform-btn_next" class="easyui-linkbutton c8" style="width: 50px">Next</a>
+		</div>
+
+		<div>
+			<a id="pnl_edituploadform-btn_addnew" class="easyui-linkbutton c8" style="width: 100px">Tambah Baru</a>
+		</div>
+
+		<div>
+			<a id="pnl_edituploadform-btn_delete" class="easyui-linkbutton c5" style="width: 100px">Hapus</a>
+		</div>
+	</div>
+
+
+
+
+</div>	

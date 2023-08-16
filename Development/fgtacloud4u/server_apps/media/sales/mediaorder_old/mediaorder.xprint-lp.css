@@ -1,0 +1,29 @@
+/* CSS For printing purpose*/
+
+.rptdata-col-no {
+	width: 10mm
+}
+
+.rptdata-col-descr {
+	font-style: italic;
+}
+
+.rptdata-col-start {
+	text-align: center;
+	width: 20mm;
+}
+
+.rptdata-col-end {
+	text-align: center;
+	width: 20mm;
+}
+
+.rptdata-col-dur {
+	text-align: right;
+	width: 10mm;
+}
+
+.rowfoot {
+	font-weight: bold;
+}				
+		

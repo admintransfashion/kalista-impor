@@ -1,0 +1,213 @@
+<div id="pnl_edit">
+	<div class="fgta-page-title" style="display: flex; align-items: center ">
+		<div>Edit Allo Topup</div>
+		<a id="pnl_edit-btn_edit" href="javascript:void(0)" class="easyui-linkbutton" style="margin-left:10px;" data-options="plain:true,iconCls:'fgta-icon-edit'">edit</a>
+	</div>
+
+
+	<form id="pnl_edit-form">
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">ID</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_allotopup_id" class="easyui-textbox" mapping="allotopup_id"  maxlength="36" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Site</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_site_id" class="easyui-combo" style="width: 400px" mapping="site_id" display="site_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'Site harus diisi', prompt: '-- PILIH --'"   validType="requiredcombo['pnl_edit-cbo_site_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Date</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-dt_allotopup_date" class="easyui-datebox" style="width: 400px" mapping="allotopup_date" data-options="editable:false ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Name</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_allotopup_name" class="easyui-textbox" mapping="allotopup_name"  maxlength="64" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Email</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_allotopup_email" class="easyui-textbox" mapping="allotopup_email"  maxlength="128" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Phone</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_allotopup_phone" class="easyui-textbox" mapping="allotopup_phone"  maxlength="64" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Value IDR</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_allotopup_validr" class="easyui-numberbox" mapping="allotopup_validr" style="width: 400px; text-align:right" data-options="precision: 2, decimalSeparator:'.', groupSeparator:','  , required: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<?=$this->Section('Status', true, true, '')?>
+		<div class="fgta_section_collapsible " style="display: none">
+					
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Client Ref</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_allotopup_clientref" class="easyui-textbox" mapping="allotopup_clientref"  maxlength="64" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">TxId</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_allotopup_txid" class="easyui-textbox" mapping="allotopup_txid"  maxlength="64" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Nonce</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_allotopup_nonce" class="easyui-textbox" mapping="allotopup_nonce"  maxlength="64" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">TimeStamp</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_allotopup_timestamp" class="easyui-textbox" mapping="allotopup_timestamp"  maxlength="64" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Barcode</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_allotopup_barcode" class="easyui-textbox" mapping="allotopup_barcode"  maxlength="64" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Allo Ref</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_allotopup_alloref" class="easyui-textbox" mapping="allotopup_alloref"  maxlength="64" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Status</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_allotopup_status" class="easyui-textbox" mapping="allotopup_status"  maxlength="64" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Message</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_allotopup_message" class="easyui-textbox" mapping="allotopup_message"  maxlength="64" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"></div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-chk_allotopup_isdone" class="easyui-checkbox c1" mapping="allotopup_isdone" data-options="label: 'Done', labelPosition: 'after', checked: false , disabled: true">
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"></div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-chk_allotopup_isgen" class="easyui-checkbox c1" mapping="allotopup_isgen" data-options="label: 'Generated', labelPosition: 'after', checked: false , disabled: true">
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Generated By</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_allotopup_genby" class="easyui-textbox" mapping="allotopup_genby"  maxlength="14" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Generated Date</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_allotopup_gendate" class="easyui-textbox" mapping="allotopup_gendate"   style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		</div>
+					
+	</form>
+
+
+	<div class="form_row" style="margin-top: 30px">
+		<div class="form_label_col"></div>
+		<div class="form_input_col" style="border: 0px solid black">
+			<a id="pnl_edit-btn_save" class="easyui-linkbutton c1" style="width">Simpan</a>
+		</div>
+	</div>	
+
+
+
+		<div id="pnl_edit-detil" class="form_row" style="margin-top: 30px">
+			<div class="form_label_col"></div>
+			<div class="form_input_col detilbox" style="border: 0px solid black">
+				<div class="fgtable-head" style="height: 25px; padding: 5px 0px 0px 5px">Detil Informations</div>
+				<div class="fgtable-head-drow" style="height: 25px; padding: 5px 5px 0px 5px; ; " onclick="$ui.getPages().ITEMS['pnl_edit'].handler.detil_open('pnl_editbarcode')">
+					<div id="pnl_edit-txt_barcode_title" class="detilgrid-text">Barcode</div>
+					<div id="pnl_edit-txt_barcode_value" class="detilgrid-value">&nbsp;</div>
+				</div>
+
+			</div>		
+		</div>		
+		
+		
+
+
+	<div style="margin-top: 30px; margin-left:-5px; margin-right: -5px; background-color: #cccccc; display: flex; justify-content: space-between; padding: 10px 2px 2px 2px ">
+		<div>
+			<!-- letakkan tombol-tombol xtion disini -->
+			<?php
+			$customheaderxtion = __DIR__.'/allotopup-edit-customxtion.phtml'; 
+			if (is_file($customheaderxtion)) {
+				include $customheaderxtion;
+			} else { ?>
+			
+			
+			
+							<a id="pnl_edit-btn_generate" href="javascript:void(0)" class="easyui-linkbutton c8" style="width: 80px; margin-left:10px; margin-bottom: 10px;" data-options="plain:true">Generate</a>
+
+			<?php } ?>
+		</div>
+		<div>
+			<a id="pnl_edit-btn_delete" class="easyui-linkbutton c5" style="margin-bottom: 10px; margin-right: 10px">Hapus</a>
+		</div>
+	</div>
+
+</div>
+

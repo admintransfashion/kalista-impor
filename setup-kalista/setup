@@ -1,0 +1,41 @@
+#!/bin/bash
+
+
+#    setup prerequistik infrastruktur (volume & network)
+#    Volumes
+#    1. Database (mariadb)
+docker volume create fgtadbdata
+docker volume inspect fgtadbdata
+
+#    2. Object (couchdb)
+docker volume create fgtafsdata
+docker volume create fgtafsdata
+
+
+#    Network
+#    name: fgtanetwork
+#    subnet: 192.168.0.0/20
+#    gateway: 192.168.0.1
+docker network create fgtanetwork --subnet=192.168.0.0/20 --gateway=192.168.0.1
+docker network inspect fgtanetwork
+
+
+#    setup kalista containers
+
+#    Container #1
+#    Database Server
+#    engine: mariadb 10.6
+docker compose -f compose-01-kalista-db.yml up -d
+
+
+#    Container #2
+#    Object Storage Server
+#    engine: couchdb
+docker compose -f compose-02-kalista-fs.yml up -d
+
+
+#    Container #3
+#    Application Server
+#    engine: apache 2
+docker compose -f compose-03-kalista-app.yml up -d
+

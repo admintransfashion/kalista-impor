@@ -1,0 +1,15 @@
+{
+	"title" : "Schedule",
+	"icon" : "icon-schedule-white.svg",
+	"backcolor" : "#c3b973",
+	"variance" : {},
+	"allowanonymous" : true,
+	"allowedgroups" : ["public"],
+	"apis" : {
+		"save" : { "allowanonymous": false, "allowedgroups" : ["public"] },
+		"delete" : { "allowanonymous": false, "allowedgroups" : ["public"] },
+		"open" : { "allowanonymous": false, "allowedgroups" : ["public"] },
+		"list" : { "allowanonymous": false, "allowedgroups" : ["public"] }
+	}	
+}
+

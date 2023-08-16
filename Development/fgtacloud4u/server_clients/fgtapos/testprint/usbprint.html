@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Garbage Typewriter</title>
+</head>
+<body>
+    <div>Requires an epson printer to work</div>
+    <form id="form-container">
+        <br/>
+        <label>
+            Type in a sentence <br/>
+            <input type="text" id="typewriter-input"/>
+        </label>
+        <br/><br/>
+        <div>
+            <button type="button" id="find-printer">Find Printers</button>
+            <button  type="button" id="connect-printer">Connect Printer</button>
+            <button  type="button" id="cut-printer">Cut Page</button>
+        </div>
+    </form>
+
+
+    <script>
+        // Epson printer specific codes
+        const INIT_PRINT = '\x1B' + '\x40';
+        const LINE_BREAK = '\x0A';
+        const CUT_PAPER = '\x1B' + '\x69';
+
+        // USB devices can have 1-16 possible endpoints that can be connected to
+        // we don't know what endpoint we need to connect to to send a successful print command
+        // so we just start at endpoint 1, and we shuffle until 16 to see which endpoint the printer is using
+        let endpointNumber = 1;
+
+        const getDevices = async () => navigator.usb.getDevices().then(([printer]) => Promise.resolve(printer));
+
+        const sendMessageToPrinter = (device, content) => {
+            const encoder = new TextEncoder();
+
+            const data = encoder.encode(content);
+
+            console.log('trying ', endpointNumber)
+
+            return device.transferOut(endpointNumber, data);
+        }
+
+        const startPrint = async  (device, content) => sendMessageToPrinter(device, content.join('')).catch(e => {
+            if (e.message.includes('The specified endpoint is not part of a claimed and selected alternate interface')) {
+                if (endpointNumber < 15) {
+                    endpointNumber = endpointNumber + 1;
+                    startPrint(device, content);
+                    return;
+                }
+
+                console.log('failed!');
+                return;
+            }
+
+            console.error('Send Error:', e);
+        }).then(e => console.log(e))
+
+
+        let device;
+
+        const requestPrinter = () => {
+            navigator.usb.requestDevice({
+                filters: [],
+            });
+        }
+
+        const initPrinter = async () => {
+            device = await getDevices();
+
+            await device.open();
+            await device.selectConfiguration(1);
+
+            device.claimInterface(
+                device.configuration.interfaces[0].interfaceNumber
+            );
+
+            endpointNumber = 1;
+        };
+
+        const cutPrinter = () => {
+            startPrint(device, [INIT_PRINT, LINE_BREAK, LINE_BREAK, LINE_BREAK, LINE_BREAK, CUT_PAPER]);
+        }
+
+        document.getElementById('form-container').onsubmit = (e) => e.preventDefault();
+
+        let buffer = '';
+        document.getElementById('typewriter-input').addEventListener('keydown', (e) => {
+            const code = (e.keyCode ? e.keyCode : e.which);
+
+            if  (code === 13) { //Enter keycode
+                startPrint(device, [INIT_PRINT, buffer, LINE_BREAK]);
+                document.getElementById('form-container').reset();
+                setTimeout(() => document.getElementById('typewriter-input').focus(), 100)
+                buffer = '';
+
+                return;
+            }
+
+            buffer += String.fromCharCode(code);
+        });
+
+        document.getElementById('find-printer').onclick = requestPrinter;
+        document.getElementById('connect-printer').onclick = initPrinter;
+        document.getElementById('cut-printer').onclick = cutPrinter;
+    </script>
+</body>
+
+</html>

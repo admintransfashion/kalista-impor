@@ -1,0 +1,7 @@
+FROM couchdb:3.2.2
+
+
+
+EXPOSE 5984 4369 9100
+
+

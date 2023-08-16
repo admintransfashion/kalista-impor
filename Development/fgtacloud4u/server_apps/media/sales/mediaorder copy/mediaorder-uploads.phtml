@@ -1,0 +1,40 @@
+<!-- ini blank phtml -->
+<div id="pnl_edituploads">
+	<div class="fgta-page-title">Uploads Media Order</div>
+
+
+	<div class="editupload-control" style="display: flex; justify-content: space-between;">
+		<div style="display: flex">
+
+
+			<div class="list-search-param" style="width: 280px">
+				<div class="list-search-item" style="width: 50px; align-self:center;">Dept</div>
+				<div class="list-search-item" style="width: 200px">
+					<input id="pnl_list-cbo_search_dept" class="easyui-combo" style="width: 100%">
+				</div>
+			</div>
+
+
+			<div style="margin-top: 7px; margin-left: 3px">Upload</div>
+			<div id="pnl_edituploads-obj_pastebox" class="pastebox" contenteditable placeholder="Paste template disini..." oninput="if(this.innerHTML.trim()==='<br>')this.innerHTML=''" ></div>
+			<div id="pnl_edituploads-errormessage" style="margin-top: 7px; margin-left: 5px; color: red"></div>
+		</div>
+
+		<div style="display: flex">
+			<a id="pnl_edituploads-downloadtemplate" href="javascript:void(0)" class="easyui-linkbutton c8" style="margin-right:7px">Download Template</a>
+
+		</div>
+	</div>	
+
+
+	<div style="margin-top: 50px; margin-bottom: 50px">
+		result upload
+
+	</div>
+
+
+
+
+	<a id="pnl_edituploads-generate" href="javascript:void(0)" class="easyui-linkbutton c8">Generate</a>
+
+</div>	
