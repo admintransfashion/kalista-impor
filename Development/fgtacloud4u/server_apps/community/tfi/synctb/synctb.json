@@ -1,7 +1,0 @@
-{
-	"title" : "Sync TB",
-	"allowanonymous" : false,
-	"allowedgroups" : ["public"],
-	"apis" : {}	
-}
-
